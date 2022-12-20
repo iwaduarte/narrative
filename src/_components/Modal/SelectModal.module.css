@@ -1,0 +1,32 @@
+.modal {
+  background-color: #aba9bc;
+  color: #343d95;
+  min-width: 18vw;
+  min-height: 52px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  padding: 16px 24px;
+
+  position: fixed;
+  left: 36%;
+  bottom: 10%;
+}
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.h4 {
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+
+.grabbable {
+  cursor: move;
+  cursor: grab;
+}
+
+.grabbable:active {
+  cursor: grabbing;
+}

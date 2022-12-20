@@ -1,0 +1,26 @@
+.datasetClass {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 14.5%;
+}
+.datasetClass > div {
+  flex: 0 34%;
+}
+.datasetClass::after {
+  content: "";
+  flex: auto;
+}
+.subHeading {
+  display: flex;
+  justify-content: flex-start;
+  width: 63.33vw;
+  text-align: left;
+  position: relative;
+  top: 38px;
+  margin: auto;
+  z-index: -1;
+}
+
+.subHeading > div {
+  flex: 0 0 44%;
+}

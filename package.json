@@ -1,0 +1,29 @@
+{
+  "name": "narrative",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://iwaduarte.github.io/narrative",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "date-fns": "^2.29.3",
+    "formik": "^2.2.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-router-dom": "^6.4.5",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "prettier": "^2.8.0",
+    "vite": "^3.2.3"
+  }
+}

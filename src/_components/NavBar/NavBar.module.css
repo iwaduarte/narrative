@@ -1,0 +1,16 @@
+.navBar {
+    display: flex;
+    position: fixed;
+    min-height: 6vh;
+    width: 100%;
+    background-color: #1b3078;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+}
+.outerBar{
+    min-height: 6vh;
+}
+.navItem {
+    margin: 0 32px;
+}

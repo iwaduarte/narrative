@@ -1,0 +1,66 @@
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #aba9bc;
+  color: #343d95;
+  width: 44vw;
+  min-height: 30vh;
+  margin: 8px 0;
+  box-sizing: border-box;
+  padding: 16px 24px;
+}
+
+.box > div {
+  flex: 0 0 100%;
+  margin-bottom: 16px;
+}
+
+.inline {
+  display: flex;
+}
+
+.inline > div {
+  flex: 1 1 0;
+}
+
+.actions {
+  margin-top: 32px;
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actionsForm {
+  margin-top: 16px;
+  flex: 1 1 100% !important;
+  justify-content: center;
+}
+
+.datasetClass {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputField {
+  display: flex;
+}
+
+.inputField span {
+  background-color: #aba9bc;
+  margin-right: 4px;
+}
+
+.inputField input {
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 154px;
+}
+
+.field {
+  width: 160px;
+}
+
+.error {
+  display: flex;
+}

@@ -1,0 +1,16 @@
+.image {
+  width: 56px;
+  height: 56px;
+  margin: 8px;
+  background-color: rgba(171, 169, 188, 0.45);
+}
+
+.small {
+  width: 56px;
+  height: 56px;
+}
+
+.medium {
+  width: 64px;
+  height: 64px;
+}
