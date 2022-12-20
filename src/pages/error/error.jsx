@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouteError } from "react-router-dom";
+import { Link, useNavigate, useRouteError } from "react-router-dom";
 import style from "./error.module.css";
 import Container from "../../_components/Container/Container.jsx";
 
@@ -15,6 +15,7 @@ const Error = () => {
         <p>
           <i>{error?.statusText || error?.message}</i>
         </p>
+        <Link to="/"> Return to Home</Link>
       </div>
     </Container>
   );
