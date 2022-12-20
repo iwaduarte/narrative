@@ -13,7 +13,7 @@ if (import.meta.hot) {
 const routeItems = [
   {
     name: `Buy Orders`,
-    path: "",
+    path: "/",
     element: <BuyOrders title="Your Buy Orders" />,
   },
   {
