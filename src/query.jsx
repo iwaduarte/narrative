@@ -13,7 +13,6 @@ const methods = {
 
 const getData = (url) => {
   const { data, error } = useSWR(`${URL}${url}`, methods.get);
-
   return { data, hasError: error };
 };
 const updateData = (url, data) => {

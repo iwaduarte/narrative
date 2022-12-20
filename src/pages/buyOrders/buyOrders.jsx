@@ -31,7 +31,7 @@ const BuyOrders = ({ title }) => {
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
-    return navigate(`/details/${id}`);
+    return navigate(`/narrative/details/${id}`);
   };
 
   const handleSelectClick = (countriesSelection) => {
@@ -51,10 +51,9 @@ const BuyOrders = ({ title }) => {
   };
 
   const handleClick = () => {
-    return navigate("/new-order");
+    return navigate("/narrative/new-order");
   };
 
-  console.log(orders);
   const { orderResultsLength, orderResults } = orders?.reduce(
     (acc, order) => {
       if (

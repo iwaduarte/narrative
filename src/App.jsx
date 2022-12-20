@@ -1,4 +1,8 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import BuyOrders from "./pages/buyOrders/buyOrders.jsx";
 import BuyOrdersDetails from "./pages/buyOrdersDetails/buyOrdersDetails.jsx";
 import Error from "./pages/error/error.jsx";
@@ -13,16 +17,16 @@ if (import.meta.hot) {
 const routeItems = [
   {
     name: `Buy Orders`,
-    path: "/",
+    path: "",
     element: <BuyOrders title="Your Buy Orders" />,
   },
   {
-    path: `/details/:id`,
+    path: `details/:id`,
     element: <BuyOrdersDetails title="Buy Orders Details" />,
   },
   {
     name: "Datasets",
-    path: `/datasets`,
+    path: `datasets`,
     element: <Datasets title="Datasets" />,
   },
   {
@@ -33,10 +37,14 @@ const routeItems = [
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/narrative/",
     element: <Root navItems={routeItems} />,
     errorElement: <Error />,
     children: routeItems,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/narrative/" />,
   },
 ]);
 

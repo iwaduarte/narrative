@@ -41,11 +41,10 @@ const BuyOrdersDetailForm = ({
     : format(parseISO(createdAt), "MM/dd/yyyy");
 
   const handleSubmit = async (values) => {
-    console.log(values);
     isNew
       ? await createData("/buy-orders", values)
       : await updateData(`/buy-orders/${values.id}`, values);
-    return navigate("/");
+    return navigate("/narrative");
   };
 
   const handleDatasetClick = (fieldName, value, ids, setField) => {

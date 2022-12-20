@@ -15,6 +15,7 @@ const { box, inline, actions, datasetClass } = style;
 
 const BuyOrdersDetails = ({ title, isNew }) => {
   const { id } = useParams();
+
   const {
     data: order = [],
     hasError,
@@ -32,6 +33,7 @@ const BuyOrdersDetails = ({ title, isNew }) => {
   } = getData(`/datasets`);
 
   const [isEdit, setIsEdit] = useState(false);
+  const navigate = useNavigate();
 
   if (hasError || errorCountries || errorDataSets) return <Error />;
   if (isLoading || isLoadingCountries || isLoadingDataset)
@@ -39,11 +41,10 @@ const BuyOrdersDetails = ({ title, isNew }) => {
 
   const { name, createdAt, budget, datasetIds, countries } = order || {};
   const formattedDate = createdAt && format(parseISO(createdAt), "MM/dd/yyyy");
-  const navigate = useNavigate();
 
   const handleDelete = async (id) => {
     await deleteData(`/buy-orders/${id}`);
-    navigate("/");
+    return navigate("/narrative");
   };
 
   return isEdit ? (
